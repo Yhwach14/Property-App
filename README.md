@@ -64,4 +64,5 @@ Since the API runs over plain HTTP locally, `android/app/src/main/AndroidManifes
 ## Logging in
 
 register a new account from Settings → Log in → Register — new accounts get the `USER` role by default and won't see listing management until an admin promotes them (`PATCH /users/:id/role` on the API side; there's no in-app UI for this, by design — it mirrors a real "become a host" approval flow).
+
 Or you can use the backend's seeded accounts to try the owner-side features.
